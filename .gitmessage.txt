@@ -1,0 +1,37 @@
+# <type>(scope): <short summary>
+# Example:
+# feat(auth): implement signup functionality
+
+#<body>
+# What was changed and why?
+# Use bullet points if multiple things.
+# Wrap lines at 72 chars if possible.
+
+#<footer>
+# Optional: Closes #123 or describes breaking changes
+
+
+# Available Types:
+# feat	            💡 A new feature
+# fix	            🐛 A bug fix
+# chore	            🔧 Maintenance tasks (e.g., config files, package updates)
+# docs	            📚 Documentation only (README, comments, etc.)
+# refactor	        🛠️ Code refactor (no new feature or bug fix)
+# style	            🎨 Code style changes (formatting, spaces, linting – no logic changes)
+# test	            ✅ Adding or modifying tests
+# perf	            🚀 Performance improvement
+# ci	            ⚙️ Changes to CI/CD configuration (GitHub Actions, pipelines, etc.)
+# build	            🏗️ Build system or external dependencies (e.g., webpack, Docker)
+# revert	        ⏪ Reverts a previous commit
+# env	            🌍 Environment-related changes (e.g., .env files, Docker env config)
+# deps	            📦 Managing dependencies (add/remove/update packages/modules)
+# config	        ⚙️ Updates to config files (e.g., ESLint, Prettier, Webpack, tsconfig)
+# infra	            🛠 Infrastructure changes (servers, database, cloud setups)
+# security	        🔒 Security-related updates (auth logic, sanitization, etc.)
+# ux or ui	        🎨 UI/UX improvements (usually for frontend, but can be used with APIs)
+# i18n	            🌐 Internationalization or localization updates
+# accessibility	    ♿️ Changes improving accessibility (mostly frontend, but not always)
+# analytics	        📊 Adding or updating logging, metrics, or tracking
+# monitoring	    📡 Changes related to monitoring tools (New Relic, Prometheus, etc.)
+# hotfix	        🩹 Critical fix deployed quickly (usually used in emergencies)
+# prototype	        🧪 Experimental or non-final feature work
