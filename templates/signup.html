@@ -17,8 +17,8 @@
             <h1 class="text-3xl font-bold">AI Blog Generator</h1>
         </div>
         <div>
-            <a href="#" class="text-white hover:underline"> Login</a>
-            <a href="#" class="text-white hover:underline"> Signup</a>
+            <a href= "{% url 'login' %}"  class="text-white hover:underline"> Login</a>
+            <!-- <a href="{% url 'signup' %}" class="text-white hover:underline"> Signup</a> -->
         </div>
     </nav>
     <br>
@@ -26,7 +26,16 @@
     <div class="flex items-center justify-center h-screen">
         <div class="bg-white p-8 shadow-md rounded-lg max-w-md w-full">
             <!-- Login form -->
-             <form class="space-y-4">
+            <form class="space-y-4" action="" method="POST">
+                {% csrf_token %}
+                
+                {% if  err_msg%}
+                    <div align="center" style="color: red;">
+                        <h2>
+                            {{err_msg}}
+                        </h2>
+                    </div>
+                {% endif %}
                 <h2 class="text-xl font-semibold">Signup</h2>
                 <div>
                     <label for="username" class="block mb-1 font-semibold">Username</label>
@@ -42,7 +51,7 @@
                 </div>
                 <div>
                     <label for="repeatpassword" class="block mb-1 font-semibold">Repeat Password</label>
-                    <input type="repeatpassword" name="repeatpassword" id="repeatpassword" placeholder="Repeat your password..." class="w-full p-2 border arounded">
+                    <input type="password" name="repeatpassword" id="repeatpassword" placeholder="Repeat your password..." class="w-full p-2 border arounded">
                 </div>
                 <button type="submit" class="w-full bg-blue-600 text-white p-1 rounded hover:bg-blue-700">Signup
 
